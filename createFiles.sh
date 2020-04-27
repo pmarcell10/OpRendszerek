@@ -2,14 +2,14 @@
 
 trap exit_handler EXIT
 
-exit_handler() { # Config törlése klpépéskor
+exit_handler() { # Config törlése kilépéskor
 rm config.txt
 echo "Config törölve."
 }
 
 echo "$(basename $0) started running with process ID: $$"
 
-# Paraméter ellnnörzés
+# Paraméter ellelőrzés
 if [ $# -ne 1 ] ; then
   echo "No parameter directory given. Usage: $(basename $0) dest_dir"
   exit 1
