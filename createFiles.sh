@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Signal
 trap exit_handler EXIT
 
 exit_handler() { # Config törlése kilépéskor
@@ -9,7 +10,7 @@ echo "Config törölve."
 
 echo "$(basename $0) started running with process ID: $$"
 
-# Paraméter ellelőrzés
+# Paraméter ellenőrzés
 if [ $# -ne 1 ] ; then
   echo "No parameter directory given. Usage: $(basename $0) dest_dir"
   exit 1
