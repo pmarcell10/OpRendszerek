@@ -4,8 +4,10 @@
 trap exit_handler EXIT
 
 exit_handler() { # Config törlése kilépéskor
-rm config.txt
-echo "Config törölve."
+if [ -f config.txt ] ; then
+  rm config.txt
+  echo "Config törölve."
+fi
 }
 
 echo "$(basename $0) started running with process ID: $$"
