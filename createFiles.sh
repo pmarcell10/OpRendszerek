@@ -7,6 +7,8 @@ rm config.txt
 echo "Config törölve."
 }
 
+echo "$(basename $0) started running with process ID: $$"
+
 # Paraméter ellnnörzés
 if [ $# -ne 1 ] ; then
   echo "No parameter directory given. Usage: $(basename $0) dest_dir"
