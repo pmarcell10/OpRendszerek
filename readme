@@ -1,0 +1,12 @@
+./createFiles "DEST_DIR"
+
+A createFiles.sh shell script, az aktuális könyvtárban lévő 2 külön (tulajdonságú) fájlt, alapesetben üres-nem üres, a paraméterben megadott mappába generálja 2 létrehozott almappába, több példányban.
+
+A programban le van kezelve: 
+-exit szignál
+-process id
+-paraméterkezelés
+-"include"-olt config fájl
+-beolvasás
+-elágazások különböző feltételekkel
+-ciklus
